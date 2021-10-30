@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(to right, $color-dark-blue, $color-light-blue);
+  background: linear-gradient(to right, $color-dark-blue, $color-light-blue);
+
+}
+
+html{
+  font-size: 87.5%;  // 1rem = 14px
+
+}

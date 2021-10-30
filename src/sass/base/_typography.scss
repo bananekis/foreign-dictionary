@@ -1,0 +1,36 @@
+body {
+  font-family: "Baloo Thambi 2", cursive;
+  line-height: 1.7;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-yellow,
+    $color-pinky-yellow
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+
+.heading-secondary {
+  font-size: 2.3rem;
+  font-weight: 700;
+  display: block;
+  color: $color-light-green;
+  letter-spacing: 2px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
+}

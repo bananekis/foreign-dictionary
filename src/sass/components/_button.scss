@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  opacity: .9;
+
+  &:hover{
+    opacity: 1;
+  }
+
+  &--add{
+    background-color: $color-light-green;
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+  &--signOut{
+    background-color: orange;
+    border: none;
+    margin: 1rem;
+  }
+
+  &--plus{
+    padding: 0rem 1.2rem 0rem 1rem;
+    font-size: 1.6rem;
+    background-color: $color-background-blue;
+    margin-left: 2.5rem!important;
+    border: 3px solid $color-light-blue;
+    color: #383838;
+  }
+}
+
+button{border: none;background-color: transparent; outline: none}

@@ -1,0 +1,18 @@
+.custom-select{
+  position: relative;
+
+  select{
+    padding: 0 .5em;
+    width: 100%;
+    line-height: 3;
+    border-radius: 3px;
+  }
+}
+
+.u-center-text{
+  select{
+    width: 11rem;
+    height: 2rem;
+    padding: 0 .5rem;
+  }
+}

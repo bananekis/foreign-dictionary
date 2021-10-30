@@ -1,0 +1,105 @@
+.form-field{
+  position: relative;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: .5rem;
+  border: 1.5px solid $color-background-blue;
+  background: white;
+  transition: border .3s ease;
+  flex: 1 1 auto;
+
+  &::placeholder {
+    color: $color-placeholder;
+  }
+
+  &--normal{
+    &:focus {
+      border-color: $color-background-blue-focus;
+      outline: none;
+    }
+  }
+
+  &--special{
+    border:none;
+    outline: none;
+  }
+
+}
+
+.form-group{
+  display: flex;
+
+  & > span,
+  .form-field{
+    white-space: nowrap;
+    display: block;
+    &:not(:first-child):not(:last-child) {
+      border-radius: 2px;
+    }
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+  }
+
+  & > span{
+    padding: 8px 12px;
+    font-size: 1rem;
+    transition: background .3s ease, border .3s ease, color .3s ease;
+  }
+
+  &--normal{
+    & > span{
+      color: $color-background-span-input;
+      background: $color-background-blue;
+    }
+
+    &:focus-within {
+      & > span {
+        color: white;
+        background: $color-background-blue-focus;
+      }
+    }
+  }
+
+  &--delete{
+    & > span{
+      background-color: #ff232b;
+      & > a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  &--empty{
+    & > span {
+      background-color: white;
+    }
+  }
+
+  &--translate{
+    & > span.one{
+      background-color: orangered;
+      & > a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  &--voice{
+    & > span.two{
+      background-color: yellow;
+      & > a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.row {
+  @include clearfix;
+
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &--special {
+    max-width: $grid-width-special !important;
+    margin: 0 auto;
+  }
+
+  [class^="col-"] {
+    margin: auto;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $grid-horizontal-space;
+    }
+  }
+
+  &:not(:last-child) {
+    //margin-bottom: $grid-vertical-space;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$grid-horizontal-space}) / 2);
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+  }
+  .col-1-of-3 {
+    width: calc((100% - #{$grid-horizontal-space * 2}) / 3);
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+}

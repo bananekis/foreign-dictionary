@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,500,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(to right, #2443ff, #3567fc);
+  background: linear-gradient(to right, #2443ff, #3567fc);
+}
+
+html {
+  font-size: 87.5%;
+}
+
+body {
+  font-family: "Baloo Thambi 2", cursive;
+  line-height: 1.7;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* .heading-primary {
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-image: linear-gradient(to right, #fbc02d, #fbab7e);
+	display: inline-block;
+	-webkit-background-clip: text;
+	color: transparent;
+	transition: all 0.3s;
+	letter-spacing: 2px;
+	margin-top: 1rem;
+}
+
+.heading-secondary {
+	font-size: 2.3rem;
+	font-weight: 700;
+	display: block;
+	color: #73e600;
+	letter-spacing: 2px;
+}
+
+.u-center-text {
+	text-align: center;
+}
+
+.u-margin-bottom {
+	margin-bottom: 1.5rem;
+}
+
+.u-margin-top-small {
+	margin-top: 0.5rem;
+}
+
+.u-margin-top-medium {
+	margin-top: 2rem;
+}
+
+.u-margin-bottom-large {
+	margin-bottom: 2rem;
+}
+
+.u-margin-top-mega {
+	margin-top: 20rem;
+}
+
+.u-center-div {
+	position: absolute;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.8rem 2rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+	overflow: hidden;
+	position: relative;
+	opacity: 0.9;
+}
+.btn:hover {
+	opacity: 1;
+}
+.btn--add {
+	background-color: #73e600;
+	margin-bottom: 1rem;
+	border: none;
+}
+.btn--signOut {
+	background-color: orange;
+	border: none;
+	margin: 1rem;
+}
+.btn--plus {
+	padding: 0rem 1.2rem 0rem 1rem;
+	font-size: 1.6rem;
+	background-color: #cfe0fc;
+	margin-left: 2.5rem !important;
+	border: 3px solid #3567fc;
+	color: #383838;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+.form-field {
+	position: relative;
+	width: 100%;
+	padding: 8px 10px;
+	border-radius: 0.5rem;
+	border: 1.5px solid #cfe0fc;
+	background: white;
+	transition: border 0.3s ease;
+	flex: 1 1 auto;
+}
+.form-field::placeholder {
+	color: #c5ccd9;
+}
+.form-field--normal:focus {
+	border-color: #73a6ff;
+	outline: none;
+}
+.form-field--special {
+	border: none;
+	outline: none;
+}
+
+.form-group {
+	display: flex;
+}
+.form-group > span,
+.form-group .form-field {
+	white-space: nowrap;
+	display: block;
+}
+.form-group > span:not(:first-child):not(:last-child),
+.form-group .form-field:not(:first-child):not(:last-child) {
+	border-radius: 2px;
+}
+.form-group > span:first-child,
+.form-group .form-field:first-child {
+	border-radius: 6px 0 0 6px;
+}
+.form-group > span:last-child,
+.form-group .form-field:last-child {
+	border-radius: 0 6px 6px 0;
+}
+.form-group > span:not(:first-child),
+.form-group .form-field:not(:first-child) {
+	margin-left: -1px;
+}
+.form-group > span {
+	padding: 8px 12px;
+	font-size: 1rem;
+	transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+.form-group--normal > span {
+	color: #919cb5;
+	background: #cfe0fc;
+}
+.form-group--normal:focus-within > span {
+	color: white;
+	background: #73a6ff;
+}
+.form-group--delete > span {
+	background-color: #ff232b;
+}
+.form-group--delete > span > a {
+	text-decoration: none;
+	color: white;
+}
+.form-group--empty > span {
+	background-color: white;
+}
+.form-group--translate > span.one {
+	background-color: orangered;
+}
+.form-group--translate > span.one > a {
+	text-decoration: none;
+	color: white;
+}
+.form-group--voice > span.two {
+	background-color: yellow;
+}
+.form-group--voice > span.two > a {
+	text-decoration: none;
+	color: black;
+}
+
+.custom-select {
+	position: relative;
+}
+.custom-select select {
+	padding: 0 0.5em;
+	width: 100%;
+	line-height: 3;
+	border-radius: 3px;
+}
+
+.u-center-text select {
+	width: 11rem;
+	height: 2rem;
+	padding: 0 0.5rem;
+}
+
+.flags {
+	display: flex;
+	justify-content: space-between;
+}
+
+.row {
+	max-width: 70rem;
+	margin: 0 auto;
+}
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.row--special {
+	max-width: 10rem !important;
+	margin: 0 auto;
+}
+.row [class^="col-"] {
+	margin: auto;
+	float: left;
+}
+.row [class^="col-"]:not(:last-child) {
+	margin-right: 4rem;
+}
+.row .col-1-of-2 {
+	width: calc((100% - 4rem) / 2);
+}
+.row .col-1-of-3 {
+	width: calc((100% - 8rem) / 3);
+} */
