@@ -40,6 +40,11 @@ export const LoginForm = (props: Props) => {
 
   return (
     <>
+      <div className="u-center-text u-margin-bottom-large ">
+        <h2 className="heading-primary u-margin-top-large">
+          Foreign Dictionary
+        </h2>
+      </div>
       <div className={"row u-center-div "}>
         <div className={"col-1-of-3 form-group form-group--empty"}>
           <span>Username</span>

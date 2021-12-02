@@ -22,6 +22,13 @@ export const Words = (props: Props) => {
   const { language, words, onChange } = props;
 
   const onAdd = () => {
+    const isDictionaries = window.localStorage.getItem("selectedDictionary");
+
+    if (!isDictionaries) {
+      alert("Please add a dictinary");
+      return;
+    }
+
     const newWord = { value: "", translatedValue: "" };
 
     onChange(words.push(newWord));
