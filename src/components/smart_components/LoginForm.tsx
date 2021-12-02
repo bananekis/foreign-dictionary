@@ -34,7 +34,7 @@ export const LoginForm = (props: Props) => {
     onLogin();
   };
 
-  if (isLoggedIn) {
+  if (isLoggedIn === true) {
     return props.children;
   }
 
